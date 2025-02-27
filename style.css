@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background: #1C1C1C;
+    padding:  70px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 730px;
+    background: #F4F4F4;
+    flex-shrink: 0;
+}
+
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 35%;
+    width: 100%;
+    background: #6943FF;
+    color: #FFF;
+    box-sizing: border-box;
+}
+#header h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#header input{
+    border-radius: 5px;
+    border: 3px solid #B295FF;
+    width: 117px;
+    height: 83px;
+    background: #6943FF;
+    text-align: center;
+    color: #FFFF;
+    font-size: 60px;
+    font-weight: bold;
+}
+#header input::placeholder{
+    color: #FFFF;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 20px;
+}
+#header button{
+    margin-top: 10px;
+    display: inline-flex;
+    padding: 9px 27.5px;
+    border-radius: 5px;
+    background: #FFF;
+    border: none;
+
+}
+
+#output{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 10px 25px;
+    height: 65%;
+    width: 100%;
+}
+
+.card{
+    height: 100px;
+    width: 100%;
+    border-radius: 5px 0px 0px 0px;
+    background: #FFFFFF;
+    color: #353535;
+    text-align: center;
+}
+
+.card h2{
+    color: #5A537B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Si el sistema está en modo oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: white;
+    }
+
+    #output{
+        background: #1F2937;
+        color: #FFF;
+    }
+    .card{
+        background: #273549;
+    }
+    .card h2{
+        color: #CCC1FF;
+    }
+    .card p{
+        color: #FFFFFF;
+    }
+
+;
+}
